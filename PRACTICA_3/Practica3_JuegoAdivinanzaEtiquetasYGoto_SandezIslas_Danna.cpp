@@ -50,6 +50,7 @@ guess:
             goto guess;
         }
     }
+    
 // Etiqueta para reiniciar el juego donde se le pide al usuario que ingrese una opcion entre 1 y 2
 restart:
 
