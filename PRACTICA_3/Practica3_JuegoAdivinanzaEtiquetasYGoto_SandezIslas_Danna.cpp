@@ -1,7 +1,16 @@
+/*
+Nombre del archivo: Pracctica3_JuegoAdivinanzaEtiquetasYGoto_SandezIslas_Danna.cpp
+Autor: Danna Guadalupe Sandez Islas
+Fecha de creación: 12 de septiembre de 2023
+Descripción: Este archivo contiene el código principal de mi programa.
+*/
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
 #include <conio.h>
+
+// Funcion principal
 
 int main()
 {
@@ -17,7 +26,7 @@ start:
 guess:
     int num;
 
-    while (tries < 100)
+    while (tries < 100) // ciclo donde se realiza el juego
     {
         printf(" \nEn que numero crees que estoy pensando? \n");
         printf("\nIngresa el numero: ");
@@ -41,7 +50,7 @@ guess:
             goto guess;
         }
     }
-
+// Etiqueta para reiniciar el juego donde se le pide al usuario que ingrese una opcion entre 1 y 2
 restart:
 
     int op;
