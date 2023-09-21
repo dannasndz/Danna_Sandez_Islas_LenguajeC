@@ -14,7 +14,7 @@ Descripción: Programa completo de la pracrica 4. Fucniones con retorno y sin re
 void calcularFibonacci(int n);
 int calcularFibonacciR(int n);
 int factorial(int n);
-void generarTrianguloPascal(int n);
+void TrianguloPascal(int n);
 
 // Funcion main
 int main()
@@ -66,14 +66,14 @@ int main()
         case 3:
             printf("Ingresa el numero de filas que desea: ");
             scanf("%d", &n);
-            generarTrianguloPascal(n);
+            TrianguloPascal(n);
             getch();
             break;
         default:
         printf("Gracias! Hasta luego");
         break;
         }
-        
+
         system("CLS");
         printf("Te gustaria intentar de nuevo el programa?\n1-Si\n2-No\n");
         scanf("%d",&op2);
@@ -154,7 +154,7 @@ Parámetros:
 Valor de retorno: Sin valor de retorno.
 */
 
-void generarTrianguloPascal(int n)
+void TrianguloPascal(int n)
 {
     int i, j;
 
