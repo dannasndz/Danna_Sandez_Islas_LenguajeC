@@ -2,13 +2,14 @@
 // declaracion por cabecera
 #include "archivo.h"
 
-// prototipo de funcon
+// prototipo de funcion
 void sumaSaldo(int cantidad);
 
 int main()
 {
     // inicializacion de la variable externa
     saldo = 0;
+    
     // invocacion de la funcioon
     // modificar Archivo.h desde archivosjuntos.c
     sumaSaldo(250);

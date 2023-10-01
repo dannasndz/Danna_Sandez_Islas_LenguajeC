@@ -4,14 +4,16 @@
 /* TALLER 5 */
 /* Danna Sandez */
 
-// variable
+// variable global
 float PI = 3.14159;
 
+/*** Prototipo de funciones ***/
 void autoFunction(void);
 void staticFunction(void);
 void registerFunction(void);
 void globalFunction(void);
 
+/*** Funcion principal ***/
 int main()
 {
     int op;
@@ -59,6 +61,8 @@ int main()
 
     return 0;
 }
+
+/*** Desarrollo de funciones ***/
 
 void autoFunction(void)
 {
