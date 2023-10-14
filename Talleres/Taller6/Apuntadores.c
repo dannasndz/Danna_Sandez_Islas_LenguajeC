@@ -1,3 +1,8 @@
+/* 
+    TALLER 6 
+    Danna Sandez 
+*/
+
 #include "amor_amarillo.h"
 
 int *multiplicarPorDos(int *ptr);
