@@ -59,6 +59,7 @@ void mayus(char cadena[]) // mayusculas
 }
 
 
+/* esto lo utilice para otro trabajo de otra materia *****IGNORAR***** */
 // Funcion que verifica si el numero aleatorio dado ya se encuentra dentro del vector
 int repetidoVect(int num, int i, int vector[])
 {
