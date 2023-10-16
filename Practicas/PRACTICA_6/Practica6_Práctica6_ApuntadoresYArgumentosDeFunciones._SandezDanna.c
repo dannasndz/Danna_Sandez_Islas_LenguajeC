@@ -80,7 +80,7 @@ int main()
             break;
         case 5:
             res = max(ap, n);
-            printf("El numero maximo del arreglo Cerati es: %d",res);
+            printf("El numero maximo del arreglo Cerati es: %d\n",res);
             system("PAUSE");
             break;
         }
