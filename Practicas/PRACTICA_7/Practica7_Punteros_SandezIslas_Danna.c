@@ -13,8 +13,8 @@
 
 /* PROTOTIPO DE FUNCIONES */
 void argumentos(char *argv[]);
-void matriz(void);
 void ordenacion(void);
+void matriz(void);
 
 int main(int argc, char *argv[])
 {
@@ -24,8 +24,8 @@ int main(int argc, char *argv[])
         system("CLS");
         printf("     ---- MENU ----\n");
         printf("1.- Operaciones con argumentos\n");
-        printf("2.- Analisis de matriz\n");
-        printf("3.- Ordenacion de palabras\n");
+        printf("2.- Ordenacion de palabras\n");
+        printf("3.- Analisis de matriz\n");
         printf("0.- Salir\n");
         scanf("%d", &op);
         system("CLS");
@@ -36,19 +36,14 @@ int main(int argc, char *argv[])
             system("PAUSE");
             break;
         case 2:
-            matriz();
+            ordenacion();
             system("PAUSE");
             break;
         case 3:
-            ordenacion();
-            break;
-        case 0:
-            printf("Saliendo...\n");
+            matriz();
             system("PAUSE");
             break;
         }
-        system("CLS");
-        printf("\n");
     } while (op != 0);
     printf("Gracias por usar el programa. Hasta luego!\n");
     return 0;
@@ -70,35 +65,6 @@ void argumentos(char *argv[])
     printf("La resta de %d - %d = %d\n", num1, num2, num1 - num2);
     printf("La multiplicacion de %d * %d = %d\n", num1, num2, num1 * num2);
     printf("La division de %d / %d = %d\n", num1, num2, num1 / num2);
-}
-
-/*
-    Función: matriz
-    Descripción: Esta función utiliza una matriz con n elementos, para realizar una suma, utilizando punteros.
-    Parámetros: Void.
-    Valor de retorno: Sin valor de retonro.
-*/
-void matriz()
-{
-    int matriz[3][3] = {{9, 8, 7},
-                        {4, 5, 6},
-                        {3, 2, 1}};
-    int max = 0, fila = 0, col = 0, suma = 0;
-    int *ptr = &matriz[0][0];
-    for (int i = 0; i < 3 * 3; i++)
-    {
-        suma += *ptr;
-        if (*ptr > max)
-        {
-            max = *ptr;
-            fila = i / 3;
-            col = i % 3;
-        }
-        ptr++;
-    }
-    printf("\nSuma de la matriz: %d\n", suma);
-    printf("Elemento mas grande: %d\n", max);
-    printf("Fila: %d\nColumna: %d\n", fila, col);
 }
 
 /*
@@ -130,4 +96,33 @@ void ordenacion()
     {
         printf("%s\n", palabras[i]);
     }
+}
+
+/*
+    Función: matriz
+    Descripción: Esta función utiliza una matriz con n elementos, para realizar una suma, utilizando punteros.
+    Parámetros: Void.
+    Valor de retorno: Sin valor de retonro.
+*/
+void matriz()
+{
+    int matriz[3][3] = {{9, 8, 7},
+                        {4, 5, 6},
+                        {3, 2, 1}};
+    int max = 0, fila = 0, col = 0, suma = 0;
+    int *ptr = &matriz[0][0];
+    for (int i = 0; i < 3 * 3; i++)
+    {
+        suma += *ptr;
+        if (*ptr > max)
+        {
+            max = *ptr;
+            fila = i / 3;
+            col = i % 3;
+        }
+        ptr++;
+    }
+    printf("\nSuma de la matriz: %d\n", suma);
+    printf("Elemento mas grande: %d\n", max);
+    printf("Fila: %d\nColumna: %d\n", fila, col);
 }
