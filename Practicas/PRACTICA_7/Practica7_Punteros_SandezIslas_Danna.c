@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
             break;
         case 0:
             printf("Saliendo...\n");
+            system("PAUSE");
             break;
         }
         system("CLS");
