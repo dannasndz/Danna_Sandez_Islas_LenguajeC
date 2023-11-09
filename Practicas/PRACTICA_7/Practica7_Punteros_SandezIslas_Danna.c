@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
     int op;
     do
     {
+        system("CLS");
         printf("     ---- MENU ----\n");
         printf("1.- Operaciones con argumentos\n");
         printf("2.- Analisis de matriz\n");
@@ -53,6 +54,14 @@ int main(int argc, char *argv[])
     return 0;
 }
 
+/*
+    Función: argumentos
+    Descripción: Esta función toma dos numeros enteros como argumentos desde la linea de comandos para utilizarlos.
+    Parámetros:
+    - argv: los numeros que se ingrean en consola
+    Valor de retorno: Sin valor.
+*/
+
 void argumentos(char *argv[])
 {
     int num1 = atoi(argv[1]);
@@ -63,6 +72,12 @@ void argumentos(char *argv[])
     printf("La division de %d / %d = %d\n", num1, num2, num1 / num2);
 }
 
+/*
+    Función: matriz
+    Descripción: Esta función utiliza una matriz con n elementos, para realizar una suma, utilizando punteros.
+    Parámetros: Void.
+    Valor de retorno: Sin valor de retonro.
+*/
 void matriz()
 {
     int matriz[3][3] = {{9, 8, 7},
@@ -86,6 +101,12 @@ void matriz()
     printf("Fila: %d\nColumna: %d\n", fila, col);
 }
 
+/*
+    Función: ordenacion
+    Descripción: Funcion que ordena las palabras mediante apuntadores.
+    Parámetros: Void.
+    Valor de retorno: Sin valor de retonro.
+*/
 void ordenacion()
 {
     char *palabras[NUM_PALABRAS] = {"manzana", "banana", "cereza", "uva", "naranja"};
