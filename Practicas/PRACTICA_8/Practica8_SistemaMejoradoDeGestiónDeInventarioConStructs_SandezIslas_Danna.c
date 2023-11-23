@@ -1,5 +1,5 @@
 /*
-    Nombre del archivo: Practica7_SistemaMejoradoDeGestiónDeInventarioConStructs_SandezIslas_Danna.c
+    Nombre del archivo: Practica8_SistemaMejoradoDeGestiónDeInventarioConStructs_SandezIslas_Danna.c
     Autor: Danna Sandez Islas
     Fecha de creación: 22 de noviembre de 2023
 */
