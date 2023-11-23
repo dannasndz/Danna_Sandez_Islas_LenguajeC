@@ -1,0 +1,2 @@
+No.   Nombre     Especie    Raza
+1       juan    naranja    gato
